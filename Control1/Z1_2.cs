@@ -14,15 +14,19 @@ namespace Control1
             {
             "james", "ana", "joshep", "peter", "cintya"
             };
+            string sNames = "";
+            foreach (var name in names)
+            {
+                sNames += name;
+            }
 
-            //var joint = names.
-            //var finalResult = names.GroupBy(c => c).;
+            var finalResult = sNames.GroupBy(c => c).Select(g => new { Letter = g.Key, Count = g.Count() });
 
-            //foreach (IGrouping<string, string> group in finalResult)
-            //{
-            //    Console.WriteLine(group.Key);
-            //}
-
+            foreach (var group in finalResult)
+            {
+                Console.Write(group.Letter + ": ");
+                Console.WriteLine(group.Count);
+            }
         }
     }
 }
