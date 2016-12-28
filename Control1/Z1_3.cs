@@ -12,9 +12,12 @@ namespace Control1
         {
             int[] array = { 14, 12, 23, 20, 33, 32 };
 
-           
+            var result = array.OrderBy(d => d.ToString()[0]).ThenByDescending(d => d.ToString()[1]);
 
-            //var result = array.OrderBy(f )
+            foreach (var number in result)
+            {
+                Console.WriteLine(number);
+            }
         }
     }
 }
