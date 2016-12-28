@@ -18,21 +18,15 @@ namespace Control1
             new Book { Name = "JQ", Year = 1982 },
             new Book { Name = "LINQ", Year = 1984 },
             new Book { Name = "LINQ", Year = 1985 },
-            new Book { Name = "Jor LINQ", Year = 1988 },
-            new Book { Name = "aJava LINQ", Year = 1992 }
+            new Book { Name = "Jor", Year = 1988 },
+            new Book { Name = "aJava", Year = 1992 }
             };
 
-            Dictionary<string, int> wordFrequency = new Dictionary<string, int>();
+            var result = books.GroupBy(c => c.Name).Select(g => new { Author = g.Key, Count = g.Count() });
 
-            var q = from b in books
-                    group b by b.Name into g
-                    let count = g.Count()
-                    orderby count descending
-                    select new { Value = g.Key, Count = count };
-
-            foreach (var x in q)
+            foreach (var author in result)
             {
-                Console.WriteLine("Value: " + x.Value + " Count: " + x.Count);
+                Console.WriteLine("Author: " + author.Author + " Count: " + author.Count);
             }
 
         }
