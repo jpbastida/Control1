@@ -1,0 +1,6 @@
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\bin\Debug\Control1.exe.config
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\bin\Debug\Control1.exe
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\bin\Debug\Control1.pdb
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\obj\Debug\Control1.csprojResolveAssemblyReference.cache
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\obj\Debug\Control1.exe
+D:\BrainAcademy\TareasInClass\Module4\Control1\Control1\obj\Debug\Control1.pdb
