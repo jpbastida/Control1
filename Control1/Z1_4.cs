@@ -28,7 +28,6 @@ namespace Control1
             {
                 Console.WriteLine("Author: " + author.Author + " Count: " + author.Count);
             }
-
         }
     }
 }

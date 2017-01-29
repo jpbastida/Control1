@@ -50,6 +50,8 @@
     <Compile Include="Z1_2.cs" />
     <Compile Include="Z1_3.cs" />
     <Compile Include="Z1_4.cs" />
+    <Compile Include="Z1_5.cs" />
+    <Compile Include="Z1_6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
